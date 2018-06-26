@@ -4,12 +4,14 @@ import com.saucelabs.rdc.helper.RdcListenerProvider;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import static com.saucelabs.rdc.RdcCapabilities.API_KEY;
 import static com.saucelabs.rdc.RdcEndpoints.EU_APPIUM_ENDPOINT;
 
+@Ignore
 @Listeners(RdcTestResultWatcher.class)
 public class RdcTestResultWatcherTest implements RdcWatcherProvider {
 
